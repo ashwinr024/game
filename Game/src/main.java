@@ -10,6 +10,7 @@ public class main {
 		Random rand = new Random();
 		int ssssss=s.nextInt();
 	      int num = rand.nextInt(21);
+		int x;
 	      
 	      num=num==0?1:num;
 	      
