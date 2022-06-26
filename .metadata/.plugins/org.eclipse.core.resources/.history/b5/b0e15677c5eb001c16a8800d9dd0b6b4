@@ -1,0 +1,18 @@
+
+public class character {
+	String name;
+	String des;
+	String scar;
+	character(String name,String des,String scar)
+	{
+		this.name=name;
+		this.des=des;
+		this.scar=scar;
+	}
+	character(String name,String des)
+	{
+		this.name=name;
+		this.des=des;
+	}
+
+}

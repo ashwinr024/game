@@ -1,0 +1,38 @@
+import java.util.*;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s=new Scanner(System.in);
+		Random rand = new Random();
+        int num;
+        num = rand.nextInt(21);
+        
+		map m=new map(num,num);
+		int num1=rand.nextInt(num+1);
+		int num2=rand.nextInt(num+1);
+		m.setwinx(num1);
+		m.setwiny(num2);
+		System.out.println("find the treasure in "+num+" "+num);
+		while(true)
+		{
+			System.out.println("Current position "+m.getcy()+" "+m.getcx());
+			System.out.println("Win position "+m.getwinx()+" "+m.getwiny());
+			System.out.println("enter the direction of your move");
+			String ss=s.nextLine();
+			
+			int x=m.move(ss);
+			if(x==1)
+			{
+				break;
+			}
+			else
+			{
+				
+				continue;
+			}
+		}
+	}
+
+}

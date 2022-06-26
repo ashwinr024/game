@@ -1,0 +1,27 @@
+import java.util.*;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s=new Scanner(System.in);
+		map m=new map(10,10);
+		m.setcx();
+		m.setcy();
+		while(true)
+		{
+			String ss=s.nextLine();
+			int x=m.move(ss);
+			if(x==1)
+			{
+				break;
+			}
+			else
+			{
+				System.out.println(m.getcy()+" "+m.getcx());
+				continue;
+			}
+		}
+	}
+
+}

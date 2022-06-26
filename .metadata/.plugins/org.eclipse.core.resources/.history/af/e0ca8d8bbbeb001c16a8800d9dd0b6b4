@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class helo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		int a=s.nextInt();
+		int b=s.nextInt();
+		char ss=s.next().charAt(0);
+		if(ss=='+')
+		{
+			calculator c=new calculator();
+			c.add(a, b);
+		}
+		else if(ss=='-')
+		{
+			calculator c=new calculator();
+			c.sub(a, b);
+		}
+		else if(ss=='*')
+		{
+			calculator c=new calculator();
+			c.mul(a, b);
+		}
+		else if(ss=='/')
+		{
+			calculator c=new calculator();
+			c.div(a, b);
+		}
+
+		
+		
+	}
+}

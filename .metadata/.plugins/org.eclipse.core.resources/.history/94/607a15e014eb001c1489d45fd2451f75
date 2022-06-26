@@ -1,0 +1,36 @@
+import java.util.*;
+public class helo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner s=new Scanner(System.in);
+		
+		String si=s.nextLine();
+		
+		
+		switch(si)
+		{
+		
+		
+		case "apple":
+		{
+			System.out.println("1000");
+			break;
+		}
+		case "mango":
+		{
+			System.out.println("100");
+			break;
+		}
+		case "grapes":
+		{
+			System.out.println("10000");
+			break;
+		}
+		
+		
+	}
+
+}

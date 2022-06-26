@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class helo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ps();
+		helo ss=new helo();
+		ss.ps1();
+		
+	}
+	
+	public static  ps()
+	{
+		System.out.println("print");
+	}
+	public static void ps1()
+	{
+		System.out.println("print");
+	}
+}

@@ -1,0 +1,36 @@
+import java.util.*;
+public class helo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner s=new Scanner(System.in);
+		
+		String si=s.nextLine();
+		int in=s.nextInt();
+		int in1=s.nextInt();
+		
+		if(si.equals("+"))
+		{
+			System.out.println(in+si+in1+"="+(in+in1));
+		}
+		else if(si.equals("*"))
+		{
+			System.out.println(in+si+in1+"="+(in*in1));
+			
+		}
+		else if(si.equals("/"))
+		{
+			System.out.println(in+si+in1+"="+(in/in1));
+			
+		}
+		else if(si.equals("%"))
+		{
+			System.out.println(in+si+in1+"="+(in%in1));
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,91 @@
+
+public class map {
+	private int xs;
+	private int ys;
+	private int cx;
+	private int cy;
+	int winx=10;
+	int winy=10;
+	map(int xs,int ys)
+	{
+		this.xs=xs;
+		this.ys=ys;
+	}
+	public void setcx()
+	{
+		cx=1;
+	}
+	public void setcy()
+	{
+		cy=1;
+	}
+	public int getcx()
+	{
+		return cx;
+	}
+	public int getcy()
+	{
+		return cy;
+	}
+	
+	public int move(String d)
+	{
+			if((cx==winx && cy==winy))
+			{
+				System.out.println("You won!");
+				return 1;
+			}
+			else
+			{
+				if(d.equals("N") || d.equals("n"))
+				{
+					if(cy==1)
+					{
+						cy=ys;
+					}
+					else
+					{
+						cy--;
+					}
+				}
+				else if(d.equals("S") || d.equals("s"))
+				{
+					if(cy==ys)
+					{
+						cy=1;
+					}
+					else
+					{
+						cy++;
+					}
+				}
+				else if(d.equals("E") || d.equals("e"))
+				{
+					if(cx==1)
+					{
+						cy=xs;
+					}
+					else
+					{
+						cx--;
+					}
+				}
+				else if(d.equals("W") || d.equals("w"))
+				{
+					if(cx==xs)
+					{
+						cy=1;
+					}
+					else
+					{
+						cx++;
+					}
+				}
+				
+			}
+			return 0;
+		}
+	}
+	
+	
+

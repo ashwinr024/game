@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class helo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		int n=s.nextInt();
+		String si = s.nextLine();
+int i=0;
+
+		while (i<20)
+		{
+			System.out.println(i++);
+		}
+		int j=0;
+		while(j<n)
+		{
+			System.out.println(j++);
+		}
+		int k=0;
+		while(true)
+		{
+			String inp=s.nextLine();
+			if(inp.equals("exit"))
+				break;
+			else if(Integer.parseInt(inp)>1000)
+			{
+				break;
+			}
+			k++;
+			
+		}
+		System.out.println(k);
+		
+		
+	}
+}

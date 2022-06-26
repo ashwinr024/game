@@ -1,0 +1,38 @@
+import java.util.*;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s=new Scanner(System.in);
+		Random rand = new Random();
+	      int num = rand.nextInt(21);   
+		map m=new map(num,num);
+		m.setcx();
+		m.setcy();
+		int n1=(rand.nextInt(num)==0)?1:rand.nextInt(num);
+		int n2=(rand.nextInt(num)==0)?1:rand.nextInt(num);
+		m.setwinx(n1);
+		m.setwiny(n2);
+		System.out.println("Win position "+m.getwiny()+" "+m.getwinx());
+		while(true)
+		{
+			System.out.println("Current position "+m.getcy()+" "+m.getcx());
+			
+			System.out.println("enter the direction of your move");
+			String ss=s.nextLine();
+			
+			int x=m.move(ss);
+			if(x==1)
+			{
+				break;
+			}
+			else
+			{
+				
+				continue;
+			}
+		}
+	}
+
+}
